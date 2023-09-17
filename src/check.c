@@ -1,35 +1,31 @@
 #include "../includes/list.h"
 
-int exists(List *list, int number)
+bool exists(List *list, int number)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     Element *element = list->first;
 
     while (element != NULL) {
         if (element->number == number) {
-            return 1;
+            return true;
         }
 
         element = element->next;
     }
 
-    return 0;
+    return false;
 }
 
-int empty(List *list)
+bool empty(List *list)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     Element *element = list->first;
 
     if (element == NULL || element->number == 0) {
-        return 1;
+        return true;
     }
 
-    return 0;
+    return false;
 }

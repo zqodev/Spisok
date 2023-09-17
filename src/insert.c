@@ -2,15 +2,11 @@
 
 void append(List *list, int number)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     Element *newElement = malloc(sizeof(*newElement));
 
-    if (newElement == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(newElement == NULL);
 
     newElement->number = number;
     newElement->next = NULL;
@@ -31,9 +27,7 @@ void append(List *list, int number)
 
 void set(List *list, size_t index, int number)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     if (index == 0 || list->get(list, 0) == 0) {
         list->append(list, number);
@@ -58,9 +52,7 @@ void set(List *list, size_t index, int number)
 
 void insert(List *list, size_t index, int number)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     if (index == 0 || list->get(list, 0) == 0) {
         list->append(list, number);
@@ -90,9 +82,7 @@ void insert(List *list, size_t index, int number)
 
 void fuse(List *src, List *dst)
 {
-    if (src == NULL || dst == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(src == NULL || dst == NULL);
 
     Element *dstElement = dst->first;
     Element *srcElement = src->first;

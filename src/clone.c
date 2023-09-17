@@ -3,9 +3,7 @@
 
 List *clone(List *list)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     List *dstList = init();
     Element *element = list->first;

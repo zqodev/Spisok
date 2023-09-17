@@ -10,9 +10,7 @@ List *init()
     List *list = malloc(sizeof(*list));
     Element *element = malloc(sizeof(*element));
 
-    if (list == NULL || element == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL || element == NULL);
 
     element->number = 0;
     element->next = NULL;

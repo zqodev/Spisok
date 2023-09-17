@@ -2,9 +2,7 @@
 
 void del(List *list, size_t index)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     if (index == 0) {
         Element *temp = list->first;
@@ -35,9 +33,7 @@ void del(List *list, size_t index)
 
 void clear(List *list)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     Element *element = list->first;
 

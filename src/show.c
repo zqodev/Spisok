@@ -2,6 +2,8 @@
 
 void show(List *list)
 {
+    assert(list == NULL);
+
     Element *element = list->first;
 
     printf("[");
@@ -20,6 +22,8 @@ void show(List *list)
 
 void showClean(List *list)
 {
+    assert(list == NULL);
+
     size_t counter = 0;
     Element *element = list->first;
 

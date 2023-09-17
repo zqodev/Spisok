@@ -2,9 +2,7 @@
 
 size_t size(List *list)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     size_t counter = 0;
     Element *element = list->first;
@@ -19,9 +17,7 @@ size_t size(List *list)
 
 size_t index(List *list, int number)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     size_t counter = 0;
     Element *element = list->first;
@@ -40,9 +36,7 @@ size_t index(List *list, int number)
 
 int get(List *list, size_t index)
 {
-    if (list == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    assert(list == NULL);
 
     size_t counter = 0;
     Element *element = list->first;

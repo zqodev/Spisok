@@ -1,8 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 #ifndef SPISOK_LIST_H
 #define SPISOK_LIST_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>
 
 typedef struct Element Element;
 struct Element {
