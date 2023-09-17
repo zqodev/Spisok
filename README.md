@@ -27,6 +27,8 @@ int main(void)
   list->show(list);
   list->showClean(list);
   list->size(list);
+  list->getFirst(list);
+  list->getLast(list);
   list->index(list, value);
   list->get(list, index);
 ```
