@@ -4,6 +4,6 @@
 #define SPISOK_SHOW_H
 
 void show(List *list);
-void show_clean(List *list);
+void showCleanvvvvv(List *list);
 
 #endif

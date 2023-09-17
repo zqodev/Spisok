@@ -30,7 +30,7 @@ List *init()
     list->exists = exists;
     list->empty = empty;
     list->show = show;
-    list->show_clean = show_clean;
+    list->showClean = showClean;
     list->clone = clone;
 
     return list;

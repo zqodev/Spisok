@@ -18,7 +18,7 @@ void show(List *list)
     printf("]\n");
 }
 
-void show_clean(List *list)
+void showClean(List *list)
 {
     size_t counter = 0;
     Element *element = list->first;

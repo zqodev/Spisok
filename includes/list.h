@@ -25,7 +25,7 @@ struct List {
     int (*exists)(List *list, int number);
     int (*empty)(List *list);
     void (*show)(List *list);
-    void (*show_clean)(List *list);
+    void (*showClean)(List *list);
     List *(*clone)(List *list);
 };
 
