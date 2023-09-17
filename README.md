@@ -16,6 +16,7 @@ int main(void)
 
 ```c
   list->append(list, value);
+  list->set(list, index, value);
   list->insert(list, index, number);
   list->fuse(srcList, dstList);
   list->del(list, index);
