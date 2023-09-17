@@ -17,6 +17,7 @@ void append(List *list, int number)
 
     if (list->first == NULL || list->get(list, 0) == 0) {
         list->first = newElement;
+        list->last = newElement;
     } else {
         Element *current = list->first;
 
@@ -24,6 +25,7 @@ void append(List *list, int number)
             current = current->next;
         }
         current->next = newElement;
+        list->last = newElement;
     }
 }
 

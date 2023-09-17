@@ -8,6 +8,7 @@ int main(void)
     list->append(list, 15);
     list->append(list, 27);
     list->append(list, 348);
+    list->append(list, 175);
 
     list->show(list);
 

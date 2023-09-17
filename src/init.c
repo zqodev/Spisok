@@ -17,6 +17,7 @@ List *init()
     element->number = 0;
     element->next = NULL;
     list->first = element;
+    list->last = element;
 
     list->append = append;
     list->insert = insert;
@@ -32,6 +33,8 @@ List *init()
     list->show = show;
     list->showClean = showClean;
     list->clone = clone;
+    list->getFirst = getFirst;
+    list->getLast = getLast;
 
     return list;
 }

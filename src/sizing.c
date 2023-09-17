@@ -9,7 +9,7 @@ size_t size(List *list)
     size_t counter = 0;
     Element *element = list->first;
 
-    while (element != NULL) {
+    while (element->number != list->getLast(list)) {
         counter++;
         element = element->next;
     }
@@ -57,4 +57,12 @@ int get(List *list, size_t index)
     }
 
     return -1;
+}
+
+int getFirst(List *list) {
+    return list->first->number;
+}
+
+int getLast(List *list) {
+    return list->last->number;
 }

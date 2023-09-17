@@ -27,6 +27,10 @@ void del(List *list, size_t index)
         previous->next = current->next;
         free(current);
     }
+
+    if (previous->next == NULL) {
+        list->last = previous;
+    }
 }
 
 void clear(List *list)
@@ -44,4 +48,5 @@ void clear(List *list)
     }
 
     list->first = NULL;
+    list->last = NULL;
 }
