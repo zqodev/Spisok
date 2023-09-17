@@ -1,5 +1,5 @@
 # Spisok
-📜 Spisok permet de créer des listes dynamiques en C.
+📜 Spisok allows you to create dynamic lists in C.
 
 ## Here are how to init a list:
 
